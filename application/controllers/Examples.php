@@ -186,7 +186,7 @@ class Examples extends CI_Controller {
 		$crud->set_table('offices');
 		$crud->set_subject('Office');
 
-		$crud->set_crud_url_path(site_url(strtolower(__CLASS__."/".__FUNCTION__)),site_url(strtolower(__CLASS__."/multigrids")));
+		//$crud->set_crud_url_path(site_url(strtolower(__CLASS__."/".__FUNCTION__)),site_url(strtolower(__CLASS__."/multigrids")));
 
 		$output = $crud->render();
 
@@ -211,7 +211,7 @@ class Examples extends CI_Controller {
 
 		$crud->set_field_upload('file_url','assets/uploads/files');
 
-		$crud->set_crud_url_path(site_url(strtolower(__CLASS__."/".__FUNCTION__)),site_url(strtolower(__CLASS__."/multigrids")));
+		//$crud->set_crud_url_path(site_url(strtolower(__CLASS__."/".__FUNCTION__)),site_url(strtolower(__CLASS__."/multigrids")));
 
 		$output = $crud->render();
 
@@ -234,7 +234,7 @@ class Examples extends CI_Controller {
 		$crud->set_subject('Customer');
 		$crud->set_relation('salesRepEmployeeNumber','employees','lastName');
 
-		$crud->set_crud_url_path(site_url(strtolower(__CLASS__."/".__FUNCTION__)),site_url(strtolower(__CLASS__."/multigrids")));
+		//$crud->set_crud_url_path(site_url(strtolower(__CLASS__."/".__FUNCTION__)),site_url(strtolower(__CLASS__."/multigrids")));
 
 		$output = $crud->render();
 
